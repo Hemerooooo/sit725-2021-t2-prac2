@@ -10,16 +10,30 @@
 
 <body>
     <div class="container">
-        <h1>COOKIE CUSTOMERS</h1>
-        <h2>Customers List and Purchase History</h2>
-        <p>Below is a table shoing the customer's name, their postcode and state, along with their total number of <span
-                style="font-style: italic;">Cookie Boxes</span> purchased.
-            From the total number of boxes purchased the final column displays the respective <span
-                style="font-style: italic;">Customer Category.</span>
-        </p>
-        <div id="display">
+        <h1 class="center">SIT772 Week2 Practical</h1>
+        <h2 class="center green-text text-lighten-3">A Test of "GET" API and "POST" API</h2>
+        <div class="card-panel purple darken-1">
+            <h5>Below is a simple form recording numbers entered and calculating the SUM by clicking the sum button</h5>
+        </div><br>
+        <div class="row">
+            <form class="col s12" id="addNumber" action="/addNumber" method="POST">
+                <div class="row">
+                    <div class="input-filed col s6">
+                        <input id="first_number" name="first_number" type="text" class="validate">
+                        <label for="first_number">Num1</label>
+                    </div>
+                    <div class="input-filed col s6">
+                        <input id="second_number" name="second_number" type="text" class="validate">
+                        <label for="second_number">Num2</label>
+                    </div>
+                </div>
+                <button name="Sum" class="waves-effect waves-light btn-large" type="submit">Sum</button>
+            </form>
+            </div>
+        <div class="card-panel pink lighten-3">
+            <h5>Alternatively, you can simply add <i>"/addTwoNumbers?number1=(first number)&
+                number2=(second number)"</i> following the URL to get the SUM of two numbers</h5>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src = "js/script.js"></script>
 </body>
